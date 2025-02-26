@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
             VendorSeeder::class,
             ShipmentRateSeeder::class,
             WeightRateSeeder::class,
+            CurrencySeeder::class,
         ]);
 
         // User::factory()->create([

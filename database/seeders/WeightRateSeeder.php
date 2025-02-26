@@ -13,11 +13,13 @@ class WeightRateSeeder extends Seeder
         $shipmentRates = ShipmentRate::all();
 
         $weightRates = [
-            ['name' => '0-5 kg', 'value' => 20],
-            ['name' => '5-10 kg', 'value' => 35],
-            ['name' => '10-20 kg', 'value' => 50],
-            ['name' => '20-50 kg', 'value' => 100],
-            ['name' => '50+ kg', 'value' => 150],
+            ['name' => 'minimun kg', 'value' => 20],
+            ['name' => 'minus 40 kg', 'value' => 35],
+            ['name' => '45 + kg', 'value' => 50],
+            ['name' => '100 + kg', 'value' => 100],
+            ['name' => '300 + kg', 'value' => 250],
+            ['name' => '500 + kg', 'value' => 550],
+            ['name' => '1000 + kg', 'value' => 1150],
         ];
 
         foreach ($shipmentRates as $shipmentRate) {

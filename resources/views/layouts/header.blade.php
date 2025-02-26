@@ -27,6 +27,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('shipment_calculator.index') }}">Shipment Calculator</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('currencies.index') }}">Currency Rates</a>
+                    </li>
                 </ul>
             </div>
         </div>

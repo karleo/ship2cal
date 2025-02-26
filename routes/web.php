@@ -9,6 +9,7 @@ use App\Http\Controllers\ChargeController;
 use App\Http\Controllers\ShipmentRateController;
 use App\Http\Controllers\WeightRateController;
 use App\Http\Controllers\ShipmentCalculatorController;
+use App\Http\Controllers\CurrencyRateController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -24,6 +25,8 @@ Route::resource('weight_rates', WeightRateController::class);
 
 Route::get('/shipment-calculator', [ShipmentCalculatorController::class, 'index'])->name('shipment_calculator.index');
 Route::post('/shipment-calculator', [ShipmentCalculatorController::class, 'calculate'])->name('shipment_calculator.calculate');
+
+Route::resource('currencies', CurrencyRateController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
