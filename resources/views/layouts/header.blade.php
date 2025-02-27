@@ -21,9 +21,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('shipment_rates.index') }}">Shipment Rates</a>
                     </li>
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link" href="{{ route('weight_rates.index') }}">Weight Rates</a>
-                    </li>
+                    </li> --}}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('shipment_calculator.index') }}">Shipment Calculator</a>
                     </li>

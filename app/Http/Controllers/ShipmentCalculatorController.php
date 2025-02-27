@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\ShipmentRate;
 use App\Models\WeightRate;
+use App\Models\CurrencyRate;
 use Illuminate\Http\Request;
 
 class ShipmentCalculatorController extends Controller
@@ -48,6 +49,11 @@ class ShipmentCalculatorController extends Controller
             foreach ($shipmentRate->charges as $charge) {
                 $totalCost += $charge->amount;
             }
+
+            // // $currencyRate = CurrencyRate::findOrFail($request->currency_rate_id);
+            // $currencyRate = CurrencyRate::findOrFail(11);
+            // $convertedCost = $totalCost * $currencyRate->rate;
+            // dd($convertedCost);
 
             $results[] = [
                 'vendor' => $shipmentRate->vendor,
