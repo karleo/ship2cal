@@ -12,6 +12,7 @@ use App\Http\Controllers\ShipmentCalculatorController;
 use App\Http\Controllers\CurrencyRateController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\AirlineController;
+use App\Http\Controllers\CommodityController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -24,6 +25,7 @@ Route::resource('vendors', VendorController::class);
 Route::resource('shipments', ShipmentController::class);
 Route::resource('charges', ChargeController::class);
 Route::resource('airlines', AirlineController::class);
+Route::resource('commodities', CommodityController::class);
 
 Route::resource('shipment_rates', ShipmentRateController::class);
 Route::resource('shipment_rates.charges', ChargeController::class)->except(['show']);

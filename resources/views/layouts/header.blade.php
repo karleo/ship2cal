@@ -33,6 +33,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('airlines.index') }}">Airlines</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('commodities.index') }}">Commodity</a>
+                    </li>
                 </ul>
             </div>
         </div>
