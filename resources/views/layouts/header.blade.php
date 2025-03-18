@@ -30,6 +30,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('currencies.index') }}">Currency Rates</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('airlines.index') }}">Airlines</a>
+                    </li>
                 </ul>
             </div>
         </div>
