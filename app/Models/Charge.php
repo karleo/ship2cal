@@ -13,6 +13,7 @@ class Charge extends Model
     protected $fillable = [
         'shipment_rate_id',
         'type',
+        'name',
         'description',
         'amount',
     ];
